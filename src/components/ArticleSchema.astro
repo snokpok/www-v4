@@ -29,11 +29,7 @@ const ldData = {
       height: 512,
     },
     url: "https://example.com/about/",
-    sameAs: [
-      `${site.url}`,
-      `${site.twitterURL}`,
-      `${site.instagramURL}`,
-    ],
+    sameAs: [`${site.url}`, `${site.twitterURL}`, `${site.instagramURL}`],
   },
   headline: `${title}`,
   url: `${permalink}`,
@@ -52,4 +48,5 @@ const ldData = {
 };
 ---
 
-<script type="application/ld+json" set:html={JSON.stringify(ldData)} is:inline></script>
+<script type="application/ld+json" set:html={JSON.stringify(ldData)} is:inline
+></script>
