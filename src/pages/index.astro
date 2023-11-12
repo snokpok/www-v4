@@ -1,44 +1,90 @@
 ---
 import Layout from "../layouts/Base.astro";
 import Container from "../components/Container.astro";
+import site from "../data/settings.js";
 
 const seo = {
-  title: "Astro Minimal Starter",
-  description: "This is a starter repo for an blog built with Astro including open graph tags, canonical urls, RSS, sitemap support."
-  }
+  title: "Vincent Vu",
+  description: "I'm an engineer who loves building great products that solves important problems."
+}
 ---
 
 <Layout
   seo={seo}
 >
   <Container>
-    <h1>Astro Minimal Starter</h1>
+    <h1>Vincent Vu</h1>
     <p>
-      If you haven't heard about <a
-        href="https://astro.build"
-        target="_blank"
-        rel="noopener noreferrer">Astro</a
-      > yet you're missing out. This starter repo gives you a blog website with posts
-      written in Markdown, all powered by Astro.
+      Engineering great products
     </p>
 
-    <p>
-      Don't be fooled by the simplicity of this starter either. With excellent
-      SEO built in, Astro's excellent developer environment, and performance
-      best practices you're getting one of the best foundations for a personal
-      blog with posts written in markdown. The reason for making such a bare
-      bones starter in terms of styles is that it has what you need out of the
-      box for SEO and site structure but it makes no assumptions about how you
-      want it look and behave.
-    </p>
+    <div class="social-media">
+      <a href={site.githubURL} target="_blank">Github</a>
+      <a href={site.twitterURL} target="_blank">Twitter</a>
+      <a href={site.linkedInURL} target="_blank">Linkedin</a>
+    </div>
+    <hr />
 
-    <p>
-      Sometimes starters can feel like they are giving us way too much and
-      you'll spend a day picking apart half of the code to get to the setup you
-      actually wanted. Want to use vanilla CSS instead of Tailwind or Scss? No
-      problem!
-    </p>
+    <p>What I care about:</p>
+    <ul>
+      <li>Building software with craftmanship and simplicity: feature bloating and sugar-coated UIs happen way too often when building interfaces -- I love a sharp focus on the user experience and whether or not it solves users' problems.</li>
+      <li>
+        Developer + tech infra products: there will always be technical problems and inefficiencies; I believe products that focus in this market can win big if done correctly.
+      </li>
+    </ul>
+    
+    <hr />
 
-    <a href="/blog">Blog →</a>
+    <p>Now:</p>
+    <ul>
+      <li>Engineering @ <a href="https://flowgpt.com" target="_blank">FlowGPT</a>: AI chatbot + prompt engineering community. Seed stage startup w/ +200k users; engineer #10 on the team; doing a bunch of growth + fullstack engineering</li>
+    </ul>
+
+
+    <p>Previously:</p>
+    <ul>
+      <li>Lead of Engineering @ <a href="https://hacksc.com" target="_blank">HackSC</a>: Rebuilding tech for the flagship hackathon @ USC; led a big technical team building <a href="https://github.com/hacksc/hibiscus">a plug-and-play hackathon portal and full-stack platform</a></li>
+      <li>Engineering @ <a href="https://coursera.org" target="_blank">Coursera</a>: Worked on platform foundations powering the largest MOOC platform in the world</li>
+    </ul>
+
+    <hr />
+
+    <p>Builds:</p>
+    <ul>
+      <li><a href="https://trysupernova.one" target="_blank">Supernova</a></li>
+      <li><a href="https://fordevs.xyz" target="_blank">fordevs.xyz</a></li>
+      <li><a href="https://github.com/snokpok/tara" target="_blank">Tara.ai</a></li>
+      <li><a href="https://github.com/snokpok/scp" target="_blank">Spotify Currently Playing API</a></li>
+      <li><a href="https://github.com/snokpok/2048-cli" target="_blank">2048 on the CLI</a></li>
+    </ul>
+
+    <hr />
+
+    <p>Alma mater:</p>
+    <ul>
+      <li>B.S. Computer Science @ University of Southern California</li>
+    </ul>
+
+    <hr />
+    <p>In my free time:</p>
+    <ul>
+      <li>Valorant gamer</li>
+      <li>
+        Play with Rust
+      </li>
+    </ul>
+
   </Container>
 </Layout>
+
+<style>
+  .social-media {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+  }
+
+  .social-media a {
+    font-size: 90%;
+  }
+</style>

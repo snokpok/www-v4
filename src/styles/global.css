@@ -1,11 +1,49 @@
+
+
 :root {
-  --container-width: 960px;
-  --container-padding: 1rem;
+  --primary-font: 'Geist Mono', monospace;
+  --primary-font-weight: 400;
+  --dark-blue: #000016;
+  --text-color: #fff;
+  --primary-teal: rgb(33, 178, 139);
+  --font-size: 13px;
+  --line-height: 1.7;
+}
+
+@font-face {
+  font-family: 'Geist Mono';
+  font-weight: 500;
+  src: url('GeistMonoVF.ttf') format('ttf');
 }
 
 html,
 body {
   margin: 0;
   padding: 0;
-  font-family: "Open Sans", Arial, Helvetica, sans-serif;
+  font-family: var(--primary-font);
+  font-weight: var(--primary-font-weight);
+  font-size: var(--font-size);
+  background-color: var(--dark-blue);
+  color: var(--text-color);
+  line-height: var(--line-height);
+  letter-spacing: -0.3px;
+}
+
+h1 {
+  font-weight: 400;
+  margin: 0;
+  line-height: 1;
+}
+
+a {
+  color: var(--text-color);
+}
+
+a:hover {
+  color: var(--primary-teal);
+}
+
+li {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
 }
