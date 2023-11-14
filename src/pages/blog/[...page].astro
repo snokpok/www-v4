@@ -16,9 +16,9 @@ export async function getStaticPaths({paginate}) {
 			publishDate: frontmatter.publishDate,
 			image: frontmatter.image,
 		}))
-		// .sort((a, b) => {
-		// 	new Date(b.publishDate) - new Date(a.publishDate)
-		// })
+		.sort((a, b) => {
+			new Date(b.publishDate) - new Date(a.publishDate)
+		})
 );
 return paginate(posts, {pageSize: 10});
 
@@ -53,8 +53,6 @@ const { page } = Astro.props;
  /* Posts list */
   .postlist {
     padding: 1rem 0;
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
     gap: 2rem;
     list-style: none;
   }
