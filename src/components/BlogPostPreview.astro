@@ -7,11 +7,11 @@ const { post } = Astro.props;
 ---
 
 <article class="post-preview">
-    <a href={post.url} style="width: 100%">
-      <h1 class="title">{post.title}</h1>
-    </a>
-    <time class="publish-date">{post.publishDate}</time>
-    <p class="description">{post.description}</p>
+  <a href={post.url} style="width: 100%">
+    <h1 class="title">{post.title}</h1>
+  </a>
+  <time class="publish-date">{post.publishDate}</time>
+  <p class="description">{post.description}</p>
 </article>
 
 <style>
@@ -20,9 +20,7 @@ const { post } = Astro.props;
     --theme-text-light: #666;
   }
 
-
   .post-preview {
-
     width: 100%;
   }
 
@@ -39,23 +37,22 @@ const { post } = Astro.props;
     text-decoration: underline;
   }
 
-.title,
-.author,
-.publish-date {
-  margin: 0;
-  color: var(--theme-text);
-}
+  .title,
+  .author,
+  .publish-date {
+    margin: 0;
+    color: var(--theme-text);
+  }
 
-.publish-date,
-.author {
-  font-size: 1rem;
-  color: var(--theme-text);
-}
+  .publish-date,
+  .author {
+    font-size: 1rem;
+    color: var(--theme-text);
+  }
 
-.title {
-  font-size: 1.5rem;
-  font-weight: 700;
-  color: var(--theme-text);
-}
-
+  .title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    color: var(--theme-text);
+  }
 </style>
