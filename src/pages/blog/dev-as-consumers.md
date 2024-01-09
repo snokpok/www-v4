@@ -2,7 +2,7 @@
 layout: ../../layouts/Post.astro
 title: On the devtools market
 description: Unique market calls for unique methods.
-publishDate: Monday, Jan 8 2023
+publishDate: Monday, Jan 8 2024
 author: "Vincent Vu"
 ---
 
