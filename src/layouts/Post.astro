@@ -13,7 +13,7 @@ const { frontmatter } = Astro.props;
   <Container>
     <article class="post-content__article">
       {frontmatter.image && <img width="720" height="420" class="post-main__img" loading="lazy" src={frontmatter.image} alt={frontmatter.alt} />}
-      <h1 style="font-weight: 700;">{frontmatter.title}</h1>
+      <h1 style="font-weight: 100;">{frontmatter.title}</h1>
       <time>{frontmatter.publishDate}</time>
       <hr />
       <slot />
