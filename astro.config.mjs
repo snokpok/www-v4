@@ -10,5 +10,6 @@ export default defineConfig({
     "/zoom":
       "https://usc.zoom.us/j/3359916674?pwd=RklnSDg4YjVZNENUa013aDEwY0J4dz09",
     "/chat": "https://cal.com/snokpok",
+    "/cal": "https://cal.com/snokpok",
   },
 });
