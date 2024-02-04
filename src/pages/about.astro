@@ -1,0 +1,77 @@
+---
+import Layout from "../layouts/Base.astro";
+import Container from "../components/Container.astro";
+import site from "../data/settings.js";
+
+const seo = {
+  title: "Vincent Vu",
+  description:
+    "About",
+};
+
+const iconWidth = 18;
+---
+
+<Layout {seo}>
+  <Container>
+    <img src="assets/me.jpeg" alt="Me" class="mepic" />
+
+
+    <p>Now:</p>
+    <ul>
+      <li>
+        Engineering @ <a href="https://flowgpt.com" target="_blank">FlowGPT</a>:
+        AI chatbot + prompt engineering community. Seed stage startup w/ >200k
+        users; early engineer on the team; doing a bunch of growth + fullstack
+        engineering
+      </li>
+    </ul>
+
+    <p>Previously:</p>
+    <ul>
+      <li>
+        Engineering @ <a href="https://coursera.org" target="_blank">Coursera</a
+        >: Worked on platform foundations powering the largest MOOC platform in
+        the world
+      </li>
+      <li>
+        Lead of Engineering @ <a href="https://hacksc.com" target="_blank"
+          >HackSC</a
+        >: Rebuilding tech for the flagship hackathon @ USC w/ 1,000 participants / yr; led a technical
+        team and built <a href="https://github.com/hacksc/hibiscus"
+          >an open-source plug-and-play hackathon portal and full-stack platform</a
+        >
+      </li>
+    </ul>
+    <hr />
+
+    <p>Alma mater: Computer Science @ USC</p>
+
+    <hr />
+    <p>In my free time:</p>
+    <ul>
+      <li>Playing games (favs: Valorant, Lethal Company)</li>
+      <li>Listen to podcasts (favs: Lenny's, Startup Therapy)</li>
+      <li>Tinker + dig into different open-source projects -- I'm focusing on systems-based projects w/ Go + Rust</li>
+    </ul>
+
+    <hr />
+
+    <p>Cool stuff I hacked together:</p>
+    <ul>
+      <li><a href="https://github.com/thekernelspace/tw">tw</a>: a fast terminal file navigator</li>
+      <li><a href="https://github.com/trysupernova/supernova">Supernova</a>: a fast and beautiful open-source todo list</li>
+      <li><a href="https://github.com/snokpok/2048-cli">2048-cli</a>: ASCII-powered 2048 on the CLI, made on an airplane trip because bored</li>
+      <li><a href="https://github.com/snokpok/typeapp">type.vuvincent.com</a>: I had 2hrs to spare so I made a typeracing game</li>
+    </ul>
+  </Container>
+</Layout>
+
+<style>
+  .mepic {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    box-shadow: 0 0 0 1px gray;
+  }
+</style>
