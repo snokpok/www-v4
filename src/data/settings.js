@@ -5,7 +5,7 @@ export default {
   // JSON LD
   name: `Vincent Vu`,
   // Twitter URL
-  twitterURL: `https://twitter.com/_vmvu`,
+  twitterURL: `https://twitter.com/snokpok_`,
   // Instagram URL
   instagramURL: `https://instagram.com/snokpok`,
   // LinkedIn URL
