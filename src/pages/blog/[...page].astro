@@ -9,8 +9,9 @@ export async function getStaticPaths({paginate}) {
 
   const posts = await Astro.glob('./*.md').then(posts =>
 	posts
+		.filter(({frontmatter}) => frontmatter?.publishDate)
 		.map(({ frontmatter, url }) => ({
-      url: url,
+			url: url,
 			title: frontmatter.title,
 			description: frontmatter.description,
 			publishDate: frontmatter.publishDate,
