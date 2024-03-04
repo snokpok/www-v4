@@ -27,4 +27,3 @@ The app works by communicating with the specified laundry machine, over Bluetoot
 When you pay for the machine, I assume there must be a transaction happening to check your bank account balance, then deduct the amount from your funds, and then the machine gets activated. Digging into this would require figuring out the Bluetooth connection that happens. So I would have to setup Bluetooth tracing on my phone.
 
 Having never done this before, I followed [this](https://www.bluetooth.com/blog/a-new-way-to-debug-iosbluetooth-applications/).
-
