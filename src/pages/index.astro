@@ -7,6 +7,18 @@ const seo = {
   title: "Vincent Vu",
   description: "Home",
 };
+
+let songName: string, artists: string;
+
+const accessToken = process.env.SCP_TOKEN
+const response = await fetch("https://scp-go-production.up.railway.app/scp", {
+  headers: {
+    Authorization: `Bearer ${accessToken}`
+  }
+})
+const data: any | null = await response.json()
+songName = data?.item.name ?? null
+artists = data?.item.artists.map(el => el.name).join(", ") ?? null
 ---
 
 <Layout {seo}>
@@ -76,6 +88,9 @@ const seo = {
     <p>
       My email is <span style="font-style: italic;">v [at] vuvincent.com</span>
     </p>
+{data!==null && <><hr/><p>
+      🎵 Btw I'm listening to: <strong>{songName}</strong> - {artists}
+    </p></>}
   </Container>
 </Layout>
 
