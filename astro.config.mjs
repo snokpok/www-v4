@@ -13,6 +13,7 @@ export default defineConfig({
       "https://usc.zoom.us/j/3359916674?pwd=RklnSDg4YjVZNENUa013aDEwY0J4dz09",
     "/chat": "https://cal.com/snokpok/30min",
     "/cal": "https://cal.com/snokpok/30min",
-    "/resume": "https://drive.google.com/file/d/1sTr9rkOhmce2p_mh_d7Mx0VLnHJSNCpF/view?usp=sharing"
+    "/resume":
+      "https://drive.google.com/file/d/1sTr9rkOhmce2p_mh_d7Mx0VLnHJSNCpF/view?usp=sharing",
   },
 });

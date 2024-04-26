@@ -1,6 +1,5 @@
 import type { FC } from "react";
 
-
 let songName: string, artists: string;
 
 const accessToken = process.env.SCP_TOKEN;
