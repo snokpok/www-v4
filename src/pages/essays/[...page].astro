@@ -18,7 +18,7 @@ export async function getStaticPaths({paginate}) {
 			image: frontmatter.image,
 		}))
 		.sort((a, b) => {
-			return new Date(b.publishDate) - new Date(a.publishDate)
+			return new Date(b.publishDate) - new Date(a.publishDate);
 		})
 );
 return paginate(posts, {pageSize: 10});
