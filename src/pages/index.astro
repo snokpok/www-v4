@@ -7,17 +7,19 @@ const seo = {
   title: "Vincent Vu",
   description: "Home",
 };
+const intro =
+  "Hi, I'm Vincent. I previously interned at Coursera building platform services / infrastructure for millions of learners around the world. I'm currently a software engineer for Uplimit, where we are enabling effective upskilling for professionals and their organizations with AI.";
+const specialty =
+  "My specialty and interest is in high quality, user-first products. For me, engineering is a mean to creating value, and creating value always comes first.";
 ---
 
 <Layout {seo}>
   <Container>
     <img src="assets/me2.jpeg" alt="Me 2" class="mepic" />
     <p>
-      Hi, I'm Vincent; I'm a software engineer based out of SF. I previously
-      interned at Coursera building platform services / infrastructure for
-      millions of learners around the world. Now I'm working as a software engineer for Uplimit, a platform re-enabling interactive and effective learning for professionals with the power of AI.
+      {intro}
     </p>
-    <p>My specialty and interest is in high-quality, customer/user-first products. I take a product-first approach when building.</p>
+    <p>{specialty}</p>
     <p>I write most of my thoughts here: <a href="/essays">Essays</a></p>
     <hr />
     <p>You can find me on other platforms below:</p>
@@ -84,7 +86,7 @@ const seo = {
 
   .mepic {
     width: 80px;
-    box-shadow: 0 0 0 1px gray;
-    border-radius: 5px;
+    box-shadow: 0 0 0 0.5px gray;
+    border-radius: 1px;
   }
 </style>
